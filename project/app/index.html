@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocorrect & Predictive Keyboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Keyboard Assistant</h1>
+            <p>Type below to see autocorrect and next-word predictions.</p>
+        </header>
+
+        <main>
+            <div class="keyboard-area">
+                <textarea id="input-area" placeholder="Start typing here..." spellcheck="false"></textarea>
+
+                <div id="suggestion-strip">
+                    <!-- Suggestions will be injected here -->
+                    <div class="placeholder-text">Suggestions will appear here...</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <label class="toggle">
+                    <input type="checkbox" id="auto-accept">
+                    <span class="slider"></span>
+                    <span class="label-text">Auto-accept top suggestion on Space</span>
+                </label>
+            </div>
+
+            <div id="status-display">Ready</div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
