@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import os
 from fastapi.middleware.cors import CORSMiddleware
-from .suggest_engine import SuggestionEngine
+from .suggestion import SuggestionEngine
 
 app = FastAPI(title="Autocorrect Keyboard API")
 

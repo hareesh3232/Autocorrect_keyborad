@@ -1,5 +1,5 @@
-from .autocorrect_module import AutocorrectService
-from .ngram_module import NGramModel
+from .autocorrect import AutocorrectService
+from .ngram import NGramModel
 from .utils import tokenize, clean_text
 
 class SuggestionEngine:

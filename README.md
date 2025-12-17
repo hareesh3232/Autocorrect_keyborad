@@ -27,9 +27,9 @@ Autocrt_keyboard/
 │   ├── models/              # Saved model files (.pkl)
 │   ├── src/                 # Source Code
 │   │   ├── api.py           # FastAPI application & endpoints
-│   │   ├── ngram_module.py  # N-Gram training & probability logic
-│   │   ├── autocorrect_module.py # Spell checking wrapper
-│   │   ├── suggest_engine.py # Orchestrates Autocorrect & N-Gram modules
+│   │   ├── ngram.py         # N-Gram training & probability logic
+│   │   ├── autocorrect.py   # Spell checking wrapper
+│   │   ├── suggestion.py    # Orchestrates Autocorrect & N-Gram modules
 │   │   └── utils.py         # Text preprocessing utilities
 │   └── main.py              # Application entry point
 ├── run_app.bat              # One-click launch script for Windows
@@ -68,7 +68,7 @@ Before running the application, you must train the N-Gram model on a text corpus
 
 ```bash
 # Run from the root directory
-python project/src/ngram_module.py --train project/data/corpus.txt --out project/models/ngram_counts.pkl
+python project/src/ngram.py --train project/data/corpus.txt --out project/models/ngram_counts.pkl
 ```
 
 ### 2. Run the Application
