@@ -1,4 +1,4 @@
-# Autocorrect Keyboard Prototype
+# Autocorrect Keyboard 
 
 A predictive keyboard assistant that provides autocorrection and next-word suggestions using an N-gram model and FastAPI. This project demonstrates a core implementation of intelligent text input features similar to those found on mobile devices.
 
